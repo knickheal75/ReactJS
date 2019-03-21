@@ -70,7 +70,7 @@ render(){
 								Front-End Developer
 							</div>
 							<div class="cell" data-title="Location">
-								Los Angeles
+							
 							</div>
 						</div>
 
