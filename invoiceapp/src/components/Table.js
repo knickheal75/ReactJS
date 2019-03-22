@@ -67,7 +67,7 @@ render(){
 								26
 							</div>
 							<div class="cell" data-title="Job Title">
-								Front-End Developer
+							
 							</div>
 							<div class="cell" data-title="Location">
 							
