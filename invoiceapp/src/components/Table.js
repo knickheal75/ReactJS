@@ -67,51 +67,6 @@ render(){
 								26
 							</div>
 							<div class="cell" data-title="Job Title">
-							
-							</div>
-							<div class="cell" data-title="Location">
-							
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="cell" data-title="Full Name">
-								
-							</div>
-							<div class="cell" data-title="Age">
-								
-							</div>
-							<div class="cell" data-title="Job Title">
-								
-							</div>
-							<div class="cell" data-title="Location">
-								
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="cell" data-title="Full Name">
-								
-							</div>
-							<div class="cell" data-title="Age">
-								
-							</div>
-							<div class="cell" data-title="Job Title">
-								
-							</div>
-							<div class="cell" data-title="Location">
-								
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="cell" data-title="Full Name">
-								
-							</div>
-							<div class="cell" data-title="Age">
-								
-							</div>
-							<div class="cell" data-title="Job Title">
 								
 							</div>
 							<div class="cell" data-title="Location">
@@ -146,7 +101,52 @@ render(){
 							</div>
 							<div class="cell" data-title="Location">
 								
-							</div><span><button class="w3-button w3-large w3-circle w3-black">+</button></span>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="cell" data-title="Full Name">
+								
+							</div>
+							<div class="cell" data-title="Age">
+								
+							</div>
+							<div class="cell" data-title="Job Title">
+								
+							</div>
+							<div class="cell" data-title="Location">
+							
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="cell" data-title="Full Name">
+								
+							</div>
+							<div class="cell" data-title="Age">
+								
+							</div>
+							<div class="cell" data-title="Job Title">
+								
+							</div>
+							<div class="cell" data-title="Location">
+								
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="cell" data-title="Full Name">
+								
+							</div>
+							<div class="cell" data-title="Age">
+								
+							</div>
+							<div class="cell" data-title="Job Title">
+								
+							</div>
+							<div class="cell" data-title="Location">
+								
+							</div><span><button class="w3-button w3-large w3-circle w3-black" >+</button></span>
 						</div>
 
 					</div>
