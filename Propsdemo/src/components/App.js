@@ -5,7 +5,8 @@ import Home from "./Home";
 class App extends Component {
   render() {
     var user={
-      "one":"1"
+      "one":"1",
+      "hobbies":["football","cricket"]
     }
     return (
       <div>
