@@ -7,6 +7,7 @@ import Posts from "./components/posts"
 import Contact from "./components/contact"
 import Home from "./components/home"
 import PostItem from "./components/post_item"
+import Life from "./components/lifecycles"
 
 const App=()=>{
     return(
@@ -19,6 +20,7 @@ const App=()=>{
                     <NavLink to="/posts" activeStyle={{color:"red"}} activeClassName="selected">Posts</NavLink><br/>
                     <NavLink to={{pathname:"/profile"}}>Profile</NavLink><br/>
                     <NavLink to="/contact">Contact</NavLink><br/>
+                    <NavLink to="/life">Life</NavLink><br/>
 
 
                 </header>
@@ -29,6 +31,7 @@ const App=()=>{
                         <Route path="/profile" component={Profile}/>
                         <Route path="/contact" component={Contact}/>
                         <Route path="/posts" component={Posts}/>
+                        <Route path="/life" component={Life}/>
                         <Route path="/" exact component={Home}/>
                         <Route render={()=><h3>404</h3>}/>
                     </Switch>
