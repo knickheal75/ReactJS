@@ -3,18 +3,14 @@ import Header from "./Header";
 import Home from "./Home";
 
 class App extends Component {
-  render() {
-    var user={
-      "one":"1",
-      "hobbies":["football","cricket"]
-    }
-    return (
+    render() {
+      return (
       <div>
-        <Header name={"nikhil"} user={user}/>
+        <Header name={"nikhil"} initialAge={"27"}/>
         <h1>
           HAYLOW
         </h1>
-        <Home />
+        <Home/>
       </div>
     );
   }

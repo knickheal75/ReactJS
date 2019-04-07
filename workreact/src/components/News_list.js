@@ -1,17 +1,20 @@
-import React from "react";
+import React,{Component} from "react";
 import NewsItem from "./News_list_item"
 
-const News_list=(props)=>{
-    const items=props.news.map((item)=>{
+class News_list extends Component{
+    render(){
+       
+        const items=this.props.news.map((item,index)=>{
         return(
-            <NewsItem item ={item} key={item.id}/>
+            <NewsItem item ={item} key={index}/>
         )
     })
     return(
         <div>
-        {props.children}
+        {this.props.children}
         {items}
         </div>
     )
+}
 }
 export default News_list;

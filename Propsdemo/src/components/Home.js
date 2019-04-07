@@ -4,8 +4,10 @@ class Home extends React.Component {
     render(){
         return(
             <div>
+                <p>
                 HEY FROM home
-            </div>
+                </p>
+           </div>
         )
     }
 }
