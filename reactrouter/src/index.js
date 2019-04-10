@@ -1,42 +1,44 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter,Route,Link } from "react-router-dom"
+import { BrowserRouter,Route,Link, NavLink, Switch } from "react-router-dom"
 
 import Profile from "./components/profile"
 import Posts from "./components/posts"
 import Contact from "./components/contact"
 import Home from "./components/home"
-
+import PostItem from "./components/post_item"
 
 const App=()=>{
     return(
-        <div>
+        
            
             <BrowserRouter>
-            
-            <header>
-            <Link to="/">Home</Link><br/>
-            <Link to="/posts">Posts</Link><br/>
-            <Link to={{
-                pathname:"/profile"
-            }}>Profile</Link><br/>
-            <Link to="/contact">Contact</Link><br/>
+                <div>
+                <header>
+                    <NavLink to="/">Home</NavLink><br/>
+                    <NavLink to="/posts" activeStyle={{color:"red"}} activeClassName="selected">Posts</NavLink><br/>
+                    <NavLink to={{pathname:"/profile"}}>Profile</NavLink><br/>
+                    <NavLink to="/contact">Contact</NavLink><br/>
 
 
-            </header>
-            
-            <div>
-                <Route path="/" exact component={Home}/>
-                <Route path="/profile" component={Profile}/>
-                <Route path="/posts" component={Posts}/>
-                <Route path="/contact" component={Contact}/>
+                </header>
+                
+                
+                    <Switch>
+                        <Route path="/posts/:id/:username" component={PostItem}/>
+                        <Route path="/profile" component={Profile}/>
+                        <Route path="/contact" component={Contact}/>
+                        <Route path="/posts" component={Posts}/>
+                        <Route path="/" exact component={Home}/>
+                        <Route render={()=><h3>404</h3>}/>
+                    </Switch>
+                </div>
 
-            </div>
-    
+        
             
             </BrowserRouter>
           
-        </div>
+        
     )
 }
 
