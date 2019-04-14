@@ -8,16 +8,12 @@ class Header extends React.Component{
       title:"",
     }
   }
-  onChangeHandler = (e)=>{
-    this.setState({
-      title:e.target.value
-    })
-  }
+ 
   render(){
     return(
       <header>
-        <div className="logo">logo</div>
-        <input type="text" onChange={this.onChangeHandler}/>
+      
+        <input type="text" onChange={this.props.keywords}/>
         <div> {this.state.title} </div>
       </header>
     )
