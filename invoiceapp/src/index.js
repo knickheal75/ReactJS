@@ -1,10 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Table from "./components/Table";
-import Info from "./components/Info";
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
 
-
-ReactDOM.render(<Table />, document.getElementById('root'));
-
-
-ReactDOM.render(<Info />, document.getElementById('info'));
+ReactDOM.render(<App />, document.getElementById("root"));
